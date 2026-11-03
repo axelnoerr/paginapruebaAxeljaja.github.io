@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nombre de la Empresa · Transporte y Logística</title>
+<meta name="description" content="Servicios de transporte de carga y logística. Contenido provisional.">
+<meta property="og:title" content="Nombre de la Empresa · Transporte y Logística">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/animations.css"></head>
+<body>
+<header id="top"><div class="wrap nav">
+<a class="brand" href="#inicio" id="brand"></a>
+<button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+<ul class="links" id="links"></ul></div></header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="hero-bg" id="parallax"><svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9cdb8"/><stop offset="1" stop-color="#E9E2D2"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<path d="M0 520 Q300 380 600 480 T1200 440 T1600 500 V900H0Z" fill="#789477" opacity=".7"/>
+<path d="M0 580 Q400 470 800 560 T1600 540 V900H0Z" fill="#4d6b53"/>
+<path d="M0 700 L1600 640 V900H0Z" fill="#3a3f38"/>
+<path class="road" d="M0 790 L1600 760" stroke="#E9E2D2" stroke-width="6" fill="none"/>
+<g transform="translate(930 520)" fill="#F8F6EF"><rect x="0" y="0" width="420" height="170" rx="8"/><rect x="430" y="50" width="120" height="120" rx="14" fill="#344F3D"/><rect x="455" y="68" width="75" height="48" rx="6" fill="#b9cdb8"/><rect x="0" y="170" width="550" height="14" fill="#2a2f29"/><circle cx="90" cy="195" r="30" fill="#1d211c"/><circle cx="190" cy="195" r="30" fill="#1d211c"/><circle cx="480" cy="195" r="30" fill="#1d211c"/></g></svg></div>
+<div class="wrap"><span class="eyebrow rise d1" style="color:#cfe0cc" data-t="hero.kicker"></span>
+<h1 class="rise d1" data-t="hero.title"></h1>
+<p class="rise d2" data-t="hero.text"></p>
+<div class="cta rise d3"><a class="btn" href="#servicios">Conoce nuestros servicios</a><a class="btn ghost" href="#contacto">Contáctanos</a></div></div>
+<div class="scroll" aria-hidden="true"></div></section>
+
+<section class="tex" id="nosotros"><div class="wrap about">
+<div class="photo rv"><div class="ph" style="--h:130"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M1 6h13v10H1zM14 9h5l3 3v4h-8"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg><small>Fotografía de la empresa</small></div></div>
+<div class="rv"><span class="eyebrow">Nosotros</span><h2 data-t="about.title"></h2><p class="lead" data-t="about.text"></p><div class="mv" id="mv"></div></div></div></section>
+
+<section id="servicios"><div class="wrap"><span class="eyebrow">Servicios</span><h2 class="rv">Soluciones para mover tu carga</h2><div class="grid" id="services"></div></div></section>
+
+<section class="tex" id="flota"><div class="wrap"><span class="eyebrow">Nuestra flota</span><h2 class="rv">Unidades para cada necesidad</h2>
+<p class="lead">Los tipos de unidad mostrados son ejemplos provisionales. Edita <code>CONFIG.fleet</code>.</p>
+<div class="car" id="fleet"></div></div></section>
+
+<section id="galeria"><div class="wrap"><span class="eyebrow">Galería</span><h2 class="rv">Nuestra operación en imágenes</h2><div class="car gal" id="gallery"></div></div></section>
+
+<section class="env" id="ambiental"><svg class="leaf" viewBox="0 0 24 24" fill="#fff"><path d="M17 8C8 10 5.9 16.2 3.8 20.2L5.7 21c1-2 1.8-3.8 3.6-5.1C14 18 20 14 21 3c-2 2-5 3-8 3S7 7 7 7z"/></svg>
+<div class="wrap"><span class="eyebrow">Compromiso ambiental</span><h2 class="rv" data-t="env.title"></h2><p class="lead" data-t="env.text"></p><div class="grid" id="env"></div></div></section>
+
+<section class="tex" id="ventajas"><div class="wrap"><span class="eyebrow">Ventajas</span><h2 class="rv">Por qué elegirnos</h2><div class="grid" id="adv"></div></div></section>
+
+<section id="contacto"><div class="wrap contact">
+<div class="rv"><span class="eyebrow">Contacto</span><h2>Hablemos de tu próximo envío</h2><p class="lead">Escríbenos por WhatsApp o llena el formulario: prepararemos el mensaje con tus datos.</p>
+<p><a class="btn wa" id="waMain" target="_blank" rel="noopener">Escribir por WhatsApp</a></p><ul id="cinfo" style="list-style:none;padding:0;display:grid;gap:.4rem"></ul></div>
+<form id="form" novalidate class="rv">
+<div class="f"><label for="n">Nombre *</label><input id="n" name="nombre" autocomplete="name" required><span class="err"></span></div>
+<div class="f"><label for="e">Empresa</label><input id="e" name="empresa" autocomplete="organization"></div>
+<div class="f"><label for="t">Teléfono *</label><input id="t" name="tel" type="tel" autocomplete="tel" inputmode="tel" required><span class="err"></span></div>
+<div class="f"><label for="m">Correo electrónico *</label><input id="m" name="mail" type="email" autocomplete="email" required><span class="err"></span></div>
+<div class="f full"><label for="s">Servicio de interés</label><select id="s" name="servicio"></select></div>
+<div class="f full"><label for="g">Mensaje</label><textarea id="g" name="msg" rows="4"></textarea></div>
+<div class="full"><button class="btn wa" type="submit">Enviar por WhatsApp</button></div>
+<p class="note">Este formulario no envía datos a ningún servidor: abre WhatsApp con tu mensaje listo para enviar.</p></form></div></section>
+</main>
+
+<footer><div class="wrap"><div class="fg">
+<div><a class="brand" href="#inicio" id="fbrand"></a><p data-t="footer.text" style="margin-top:1rem;font-size:.92rem"></p></div>
+<div><h4>Enlaces</h4><ul id="flinks"></ul></div><div><h4>Servicios</h4><ul id="fserv"></ul></div>
+<div><h4>Contacto</h4><ul id="fcont"></ul></div></div>
+<div class="copy" id="copy"></div></div></footer>
+
+<a class="fab" id="fab" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.5-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.400 0 .5l-.3.5-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.3 1.700 2.100 1.100 1 2.100 1.3 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.5.300.1.200.1.700-.1 1.3z"/></svg></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotografía ampliada"><button class="x" aria-label="Cerrar">×</button><button class="p" aria-label="Anterior">‹</button><div class="box" id="lbbox"></div><button class="n" aria-label="Siguiente">›</button></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script></body></html>
