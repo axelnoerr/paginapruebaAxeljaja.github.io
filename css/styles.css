@@ -1,4 +1,4 @@
-:root{--forest:#344F3D;--sage:#789477;--beige:#E9E2D2;--ivory:#F8F6EF;--ink:#454A43;--bg:var(--ivory);--card:#fff;--tex:url("../images/papel.jpg");
+:root{--forest:#344F3D;--sage:#789477;--blue: #173B63;--blue-light: #397BA5--beige:#E9E2D2;--ivory:#F8F6EF;--ink:#454A43;--bg:var(--ivory);--card:#fff;--tex:url("../images/papel.jpg");
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ivory:#1d241f;--beige:#262e28;--ink:#dcd8cb;--card:#2b342d;--sage:#9bb59a}}
 :root[data-theme="dark"]{--ivory:#1d241f;--beige:#262e28;--ink:#dcd8cb;--card:#2b342d;--sage:#9bb59a}
